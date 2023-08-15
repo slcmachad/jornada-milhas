@@ -6,10 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./card-busca.component.scss']
 })
 export class CardBuscaComponent {
-  depoimento: string = `
-    Recomendo fortemente a agência de viagens Jornada.
-    Eles oferecem um serviço personalizado e de alta qualidade
-    que excedeu minhas expectativas em minha última viagem.
-  `
-  autoria: string = 'Mariana Faustino'
+
 }
