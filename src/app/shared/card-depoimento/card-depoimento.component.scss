@@ -1,6 +1,6 @@
-.depoimento{
+.depoimento {
   max-width: 320px;
-  background-color: #fef7ff;
+  background-color: #FEF7FF;
   border: none;
   img {
     max-width: 56px;
@@ -19,7 +19,7 @@
   }
   mat-card-content {
     display: flex;
-    align-items: start;
+    align-items: flex-start;
     gap: 16px;
   }
 }
