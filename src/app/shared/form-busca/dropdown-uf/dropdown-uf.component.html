@@ -3,6 +3,11 @@
   <mat-icon matPrefix>
     {{ iconePrefixo }}
   </mat-icon>
-  <input matInput>
+  <input matInput [matAutocomplete]="auto">
   <mat-icon matSuffix>search</mat-icon>
+  <mat-autocomplete #auto="matAutocomplete">
+    <mat-option *ngFor="let option of filteredOptions" [value]="option">
+      {{option}}
+    </mat-option>
+  </mat-autocomplete>
 </mat-form-field>
