@@ -1,16 +1,30 @@
-import { Component, Input } from '@angular/core';
+import { UnidadeFederativa } from './../../../core/types/type';
+import { UnidadeFederativaService } from './../../../core/services/unidade-federativa.service';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-dropdown-uf',
   templateUrl: './dropdown-uf.component.html',
   styleUrls: ['./dropdown-uf.component.scss']
 })
-export class DropdownUfComponent {
+export class DropdownUfComponent implements OnInit{
 
   @Input() label: string = '';
   @Input() iconePrefixo: string = '';
 
+  unidadesFederativas: UnidadeFederativa[] =  []
+
   filteredOptions = []
 
+  constructor (private unidadeFederativaService: UnidadeFederativaService){
+
+  }
+  ngOnInit(): void {
+    this.unidadeFederativaService.listar()
+      .subscribe(dados => {
+        this.unidadesFederativas = dados
+
+      })
+  }
 
 }
