@@ -12,7 +12,7 @@ export class FormBuscaComponent {
 
   constructor(
     public dialog: MatDialog,
-    private formBuscaService: FormBuscaService) {}
+    public formBuscaService: FormBuscaService) {}
 
   openDialog() {
       this.dialog.open(ModalComponent, {
