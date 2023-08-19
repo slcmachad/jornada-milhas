@@ -29,10 +29,16 @@
              <app-botao-controle operacao="incrementar"></app-botao-controle>
         </li>
       </ul>
-
+    </div>
+    <div class="selecao-categoria">
+      <p><strong>Categoria</strong></p>
+      <mat-chip-listbox aria-label="Seleção de passagens">
+        <mat-chip-option selected>1 adulto</mat-chip-option>
+        <mat-chip-option>Economica</mat-chip-option>
+      </mat-chip-listbox>
     </div>
   </div>
-  <div mat-dialog-actions>
-      <button mat-button mat-dialog-close>Close</button>
+  <div mat-dialog-actions class="modal-actions">
+      <button color="primary" mat-button mat-dialog-close>Buscar</button>
   </div>
 </section>
