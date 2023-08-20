@@ -15,17 +15,17 @@ export class SeletorPassageiroComponent implements ControlValueAccessor{
   onChange = () => {}
   onTouch = () => {}
 
-  writeValue(obj: any): void {
-    throw new Error('Method not implemented.');
+  writeValue(val: any): void {
+    this.value = val
   }
   registerOnChange(fn: any): void {
-    throw new Error('Method not implemented.');
+    this.onChange = fn
   }
   registerOnTouched(fn: any): void {
-    throw new Error('Method not implemented.');
+    this.onTouch = fn
   }
   setDisabledState?(isDisabled: boolean): void {
-    throw new Error('Method not implemented.');
+
   }
 
 
