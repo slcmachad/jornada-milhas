@@ -10,8 +10,12 @@ import { Component } from '@angular/core';
 export class FormBuscaComponent {
 
   constructor(
+    public formBuscaService: FormBuscaService
+    ) {
 
-    public formBuscaService: FormBuscaService) {}
+    }
 
-
+  buscar(){
+    console.log(this.formBuscaService.formBusca.value)
+  }
 }
