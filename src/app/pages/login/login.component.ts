@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
+import { AutenticacaoService } from 'src/app/core/services/autenticacao.service';
 
 @Component({
   selector: 'app-login',
@@ -8,19 +9,32 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 })
 export class LoginComponent implements OnInit{
 
-  login() {
-
-  }
-
   loginForm!: FormGroup;
 
-  constructor(private formBuilder: FormBuilder) {
+  constructor(
+    private formBuilder: FormBuilder,
+    private authService: AutenticacaoService
+  ) {
 
   }
   ngOnInit(): void {
     this.loginForm = this.formBuilder.group({
       email: [null],
       senha: [null]
+    })
+  }
+
+  login() {
+    const email = this.loginForm.value.email;
+    const senha = this.loginForm.value.senha;
+
+    this.authService.autenticar(email, senha).subscribe({
+      next: (value) => {
+        console.log('Login efetuado', value)
+      },
+      error: (err) => {
+        console.log('Erro ao logar', err)
+      }
     })
   }
 }
