@@ -20,8 +20,12 @@ import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatIconModule } from '@angular/material/icon';
 import { MatChipsModule } from '@angular/material/chips';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+
 import { MatInputModule } from '@angular/material/input';
 import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatRadioModule } from '@angular/material/radio';
 import { MatNativeDateModule } from '@angular/material/core';
 import { ModalComponent } from './shared/modal/modal.component';
 import { MatDialogModule } from '@angular/material/dialog';
@@ -57,7 +61,8 @@ import { FormBaseComponent } from './shared/form-base/form-base.component';
     DepoimentosComponent,
     SeletorPassageiroComponent,
     LoginComponent,
-    FormBaseComponent
+    FormBaseComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -76,7 +81,12 @@ import { FormBaseComponent } from './shared/form-base/form-base.component';
     MatDialogModule,
     HttpClientModule,
     ReactiveFormsModule,
-    MatAutocompleteModule
+    MatAutocompleteModule,
+    FormBaseComponent,
+    MatRadioModule,
+    MatDividerModule,
+    MatCheckboxModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
