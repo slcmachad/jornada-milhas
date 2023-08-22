@@ -1,5 +1,5 @@
-import { UnidadeFederativa } from './../../../core/types/type';
-import { UnidadeFederativaService } from './../../../core/services/unidade-federativa.service';
+import { UnidadeFederativa } from '../../core/types/type';
+import { UnidadeFederativaService } from '../../core/services/unidade-federativa.service';
 import { Component, Input, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
 
