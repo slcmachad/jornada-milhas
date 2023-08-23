@@ -39,6 +39,7 @@ import { DepoimentosComponent } from './pages/home/depoimentos/depoimentos.compo
 import { SeletorPassageiroComponent } from './shared/seletor-passageiro/seletor-passageiro.component';
 import { LoginComponent } from './pages/login/login.component';
 import { FormBaseComponent } from './shared/form-base/form-base.component';
+import { CadastroComponent } from './pages/cadastro/cadastro.component';
 
 
 
@@ -62,6 +63,7 @@ import { FormBaseComponent } from './shared/form-base/form-base.component';
     SeletorPassageiroComponent,
     LoginComponent,
     FormBaseComponent,
+    CadastroComponent,
 
   ],
   imports: [
