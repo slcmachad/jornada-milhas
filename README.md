@@ -23,4 +23,3 @@ A componentização e reutilização são princípios fundamentais no desenvolvi
  - Além disso, conseguimos trabalhar com a camada de cache na hora de obter os estados e também concluímos o componente que implementa um form control. Ou seja, o componente que criamos do zero permite que a pessoa usuária ou desenvolvedora que for consumi-lo, passe para ele um form control e a quantidade de passageiros que diminui ou aumenta vai estar disponível dentro daquele controle.
 
  - Precisamos implementar muitas funcionalidades interessantes. Nesse curso, passamos pela experiência de vida real de uma pessoa desenvolvedora, ou seja, pegamos uma aplicação que não começamos, com apenas um Figma e um sonho, e implementamos as funcionalidades de acordo com o que precisávamos fazer.
-
