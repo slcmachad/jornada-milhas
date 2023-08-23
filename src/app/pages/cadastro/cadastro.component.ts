@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class CadastroComponent {
 
+  perfilComponent = false;
 }
