@@ -16,3 +16,6 @@ A componentização e reutilização são princípios fundamentais no desenvolvi
 
  - Qual foi a nossa jornada de aprendizado? Começamos dando os primeiros passos em serviços e entende o escopo do serviço. Passamos por padrão de projetos, entendendo o que é o Singleton.
 
+ - Também evoluímos nossa aplicação. A Jornada Milhas ainda não tinha comportamentos, somente a camada visual. Por isso, tivemos que refatorar e escrever novas funcionalidades.
+
+
