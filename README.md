@@ -18,4 +18,6 @@ A componentização e reutilização são princípios fundamentais no desenvolvi
 
  - Também evoluímos nossa aplicação. A Jornada Milhas ainda não tinha comportamentos, somente a camada visual. Por isso, tivemos que refatorar e escrever novas funcionalidades.
 
+ - Tivemos que decidir como controlar o estado da aplicação, portanto, criamos mais um serviço para fazer o controle do formulário. Ele ficou responsável por instanciar o grupo de formulário que usamos e definir os controles. Quem precisava ter acesso, simplesmente chamava o serviço e fazia o que precisava.
+
 
