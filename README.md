@@ -12,6 +12,7 @@ A componentização e reutilização são princípios fundamentais no desenvolvi
 
  - Manutenção: Se um componente precisa ser atualizado, você só precisa fazer isso em um lugar, e todas as instâncias reutilizadas serão atualizadas automaticamente.
 
+
 ## O que aprendemos?
 
  - Qual foi a nossa jornada de aprendizado? Começamos dando os primeiros passos em serviços e entende o escopo do serviço. Passamos por padrão de projetos, entendendo o que é o Singleton.
