@@ -7,11 +7,15 @@ import { PromocaoService } from 'src/app/core/services/promocao.service';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  constructor( private servicoPromocao: PromocaoService){
+  constructor( private servicoPromocao: PromocaoService ) {
 
   }
   ngOnInit(): void {
     this.servicoPromocao.listar()
-      .subscribe(resposta => {console.log(resposta)})
+      .subscribe(
+        resposta => {
+          console.log(resposta)
+        }
+      )
   }
 }
