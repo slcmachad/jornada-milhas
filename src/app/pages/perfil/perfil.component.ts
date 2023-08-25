@@ -9,4 +9,12 @@ export class PerfilComponent {
   titulo = 'Olá pessoa'
   textoBotao = 'ATUALIZAR'
   perfilComponent = true
+
+  deslogar(){
+    console.log('log-out realizado');
+  }
+
+  atualizar(){
+    console.log('cadastro atualizado');
+  }
 }
