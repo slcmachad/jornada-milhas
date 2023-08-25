@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { PessoaUsuaria } from 'src/app/core/types/type';
 
 @Component({
   selector: 'app-perfil',
@@ -10,6 +11,9 @@ export class PerfilComponent {
   textoBotao = 'ATUALIZAR'
   perfilComponent = true
 
+  token = '';
+  nome = '';
+  cadastro!: PessoaUsuaria;
   deslogar(){
     console.log('log-out realizado');
   }
