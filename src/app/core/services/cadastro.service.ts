@@ -1,6 +1,6 @@
 import { Observable } from 'rxjs';
 import { PessoaUsuaria } from './../types/type';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { environment } from 'src/environments/environment';
 
@@ -16,4 +16,20 @@ export class CadastroService {
   cadastrar(pessoaUsuaria: PessoaUsuaria): Observable<PessoaUsuaria>{
     return this.http.post<PessoaUsuaria>(`${this.apiUrl}/auth/cadastro`, pessoaUsuaria)
   }
+
+  buscarCadastro(token: string): Observable<PessoaUsuaria>{
+    const headers = new HttpHeaders({
+      'Authorization': `Bearer ${token}`
+    })
+    return this.http.get<PessoaUsuaria>(`${this.apiUrl}/auth/perfil`, {headers})
+  }
+  editarCadastro(token: string,pessoaUsuaria: PessoaUsuaria): Observable<PessoaUsuaria>{
+    const headers = new HttpHeaders({
+      'Authorization': `Bearer ${token}`
+    })
+
+    return this.http.patch<PessoaUsuaria>(`${this.apiUrl}/auth/perfil`,pessoaUsuaria ,{headers})
+  }
+
+
 }
