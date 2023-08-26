@@ -9,7 +9,7 @@
         <a routerLink="/perfil">
           <img src="assets/icones/user.png" alt="Ícone do usuário">
         </a>
-        <button mat-stroked-button>Sair</button>
+        <button mat-stroked-button (click)="logout()">Sair</button>
       </ng-container>
       <ng-template #login>
         <button mat-raised-button color="primary" routerLink="/cadastro">Cadastre-se</button>
