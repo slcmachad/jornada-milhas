@@ -9,7 +9,7 @@ import { PessoaUsuaria } from 'src/app/core/types/type';
   styleUrls: ['./perfil.component.scss']
 })
 export class PerfilComponent implements OnInit{
-  titulo = 'Olá pessoa'
+  titulo = 'Olá '
   textoBotao = 'ATUALIZAR'
   perfilComponent = true
 
@@ -24,6 +24,10 @@ export class PerfilComponent implements OnInit{
 
   ngOnInit(): void {
     this.token = this.tokenService.retornarToken();
+    this.cadastroService.buscarCadastro(this.token).subscribe( cadastro => {
+      this.cadastro = cadastro;
+      this.nome = this.cadastro.nome
+    })
   }
 
   deslogar(){
