@@ -1,3 +1,4 @@
+import { UserService } from 'src/app/core/services/user.service';
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 
+  constructor(
+    private userService: UserService
+  ){}
+
+  user$ = this.userService.retornarUser();
 }
